@@ -1,0 +1,192 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+* {
+  box-sizing: border-box;
+}
+
+.language {
+  width: 150px;
+  input {
+    padding: 8px !important;
+  }
+}
+
+.container {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  overflow: hidden;
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 300px;
+    background-color: #202123;
+    padding: 50px 20px;
+    height: 100vh;
+    a {
+      padding: 10px 20px;
+      font-size: 24px;
+      line-height: 30px;
+      font-weight: 600;
+      color: #fff;
+      text-decoration: none;
+      letter-spacing: 0.8px;
+    }
+  }
+  .main {
+    width: 100%;
+    padding: 50px 20px;
+    .content {
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 60px;
+      .title {
+        font-size: 36px;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+        color: #715fde;
+      }
+      .form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+      }
+      
+      .form-group {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 80%;
+        .label {
+          font-size: 15px;
+          padding: 5px;
+        }
+        .form-control {
+          width: 100%;
+          font-size: 14px;
+          line-height: 21px;
+          border: 1px solid #e4e4e4;
+          border-radius: 4px;
+          padding: 12px 20px;
+          outline: none;
+        }
+        textarea {
+          resize: none;
+        }
+        .multiple-value-text-input{
+          width: 100%;
+          label {
+            text-align: left;
+          }
+        }
+        select {
+          border: 1px solid #e4e4e4;
+          border-radius: 4px;
+          padding: 12px 20px;
+          font-size: 14px;
+          outline: none;
+          option {
+            padding: 12px 20px !important;
+            height: 40px;
+          }
+        }
+      }
+      .groups {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+        .number {
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+          align-items: flex-start;
+        }
+        .btn {
+          background-color: #19c37d;
+          color: #fff;
+          padding: 12px 20px;
+          border-radius: 20px;
+          letter-spacing: 1.5px;
+          font-weight: 600;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.image-container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  .form-group {
+    width: 100%!important;
+  }
+  .groups {
+    width: 100%;
+    .btn {
+      margin-top: 50px;
+      width: 100%;
+    }
+  }
+
+  .select {
+    width: 100%;
+    text-align: left;
+    text-transform: capitalize;
+    input {
+      padding: 8px !important;
+    }
+  }
+  .image {
+    width: 500px;
+    height: 500px;
+    img {
+      width: 100%;
+    }
+  }
+}
